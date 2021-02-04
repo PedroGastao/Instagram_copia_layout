@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+body{
+    width: 100%;
+    min-width: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+
+}
+.instagram-celular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+.instagram-celular img{
+    
+}
+.instagram-conta{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.grupo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1rem 0;
+    border: 1px solid lightgray;
+
+}
+.grupo:nth-child(1){
+    min-height: 19rem;
+
+    
+}
+.imagem-instagram{
+    height: 3.3rem;
+
+}
+.foto-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 7px;
+    
+
+}
+.foto-perfil img{
+    height: 110px;
+    width: 110px;
+}
+.instagram-login{
+    margin-bottom: 20px;
+    background-color: #0095f6;
+    color:#ffffff;
+    padding: 4px;
+    border-radius: 4px;
+}
+.instagram-logout{
+    color: #0095f6;
+}
+.nao-titular{
+    color: rgb(160 160 160);
+
+}
+.link-azul{
+    color: #0095f6;
+}
+.consiga-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 1rem;
+
+}
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1){
+    background-image:url('./imagens/disponivel-na-app-store-botao-5.png');
+    
+}
+.app-download:nth-child(2){
+    background-image: url("./imagens/disponivel-google-play-badge.png");
+}
+
+/*media queries*/
+@media (max-width: 1024px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px){
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-celular{
+        display: none;
+    }
+    .instagram-conta{
+        width: 100%;
+    }
+    .grupo{
+        border: none;
+        background-color: rgb(243, 243, 243);
+    }
+}
